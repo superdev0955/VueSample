@@ -93,7 +93,7 @@ It provides a basic code base to help you figure out the structure of your Vue p
   A directory structure should be created by linking sub-components so that components can be recognized at a glance for each purpose.
 - Along with modularization, components related to UI are selected and used separately.
   If the upper module is a functional unit rather than a component unit, the structure can be improved by dividing the path by module and configuring the sub-path considering each module as a small project unit.
-- Naming of sub-registries must be regulated and functional units must be made unique.
+* Naming of sub-registries must be regulated and functional units must be made unique.
 
 ## Naming rules of Component
 - It is better to use one approach for file names. (PascalCase, kebab-case, camelCase, snake_case)
@@ -104,18 +104,18 @@ It provides a basic code base to help you figure out the structure of your Vue p
 - For components with the same category, a prefix related to the parent must be used.
   Components that are strongly tied to the parent component should use the name of the parent component as a prefix.
 - For components that are used uniquely, it is better to use them with “The” attached.
-- For sub-registries, different naming rules must be applied for each functional group. Import/export the component through index.js.
+* For sub-registries, different naming rules must be applied for each functional group. Import/export the component through index.js.
 
 ## Mockup data composition
 - Using a static data type such as json can ensure code simplicity in page rendering and component configuration for initial development.
 - For mock materials, you should create groups according to usage and perform basic management (it is recommended to delete unused files) in a register called constants.
-- It is more convenient to use the import/export function using js data, and it is better to configure mock data by page.
+* It is more convenient to use the import/export function using js data, and it is better to configure mock data by page.
 
 ## Annotate
 - The purpose of component use must be specified.
   Currently, components do not include comments describing their functionality.
   It is helpful to add comments within your code to explain the code's purpose, behavior, main logic, component roles, etc.
-- By using VS-code extensions such as Todo tree, basic error tracking and development synchronization can be guaranteed.
+* By using VS-code extensions such as Todo tree, basic error tracking and development synchronization can be guaranteed.
 
 ## Code formatting and error handling through VScode
 - formatting rules / vue code rules
