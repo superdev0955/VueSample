@@ -93,7 +93,7 @@ It provides a basic code base to help you figure out the structure of your Vue p
   A directory structure should be created by linking sub-components so that components can be recognized at a glance for each purpose.
 - Along with modularization, components related to UI are selected and used separately.
   If the upper module is a functional unit rather than a component unit, the structure can be improved by dividing the path by module and configuring the sub-path considering each module as a small project unit.
-- <u>Naming of sub-registries must be regulated and functional units must be made unique.</u>
+- <ins>Naming of sub-registries must be regulated and functional units must be made unique.</ins>
 
 ## Naming rules of Component
 - It is better to use one approach for file names. (PascalCase, kebab-case, camelCase, snake_case)
