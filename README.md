@@ -3,6 +3,15 @@
 This project was generated with [Vue CLI] version 5.0.8 and [Node.js] version 18.
 It provides a basic code base to help you figure out the structure of your Vue project for Social Mulli.
 
+## Improvements
+
+- [Project structure](#project-structure)
+- [Infrastructure restructuring](#Infrastructure-restructuring-reorganization-by-functional-unit-and-page-unit)
+- [Naming rules](#naming-rules-of-Component)
+- [Mockup data composition](#mockup-data-composition)
+- [Annotate](#annotate)
+- [Code formatting](#code-formatting-and-error-handling-through-VScode)
+
 ## Project structure
 
 ```
