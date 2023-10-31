@@ -1,4 +1,4 @@
-# 🚀 SocialMulli Vue js
+# <img src="./src/assets/sm_logo.png" width="22" height="26"> SocialMulli Vue js
 
 This project was generated with [Vue CLI] version 5.0.8 and [Node.js] version 18.
 It provides a basic code base to help you figure out the structure of your Vue project for Social Mulli.
