@@ -39,6 +39,20 @@ It provides a basic code base to help you figure out the structure of your Vue p
 |  |  ├── AppLayout.vue
 |  |  ├── AuthLayout.vue
 |  |  └── HomeLayout.vue
+|  ├── modules
+|  |  ├── launchAds
+|  |  |  ├── audience
+|  |  |  |  ├── index.js
+|  |  |  |  ├── age.vue
+|  |  |  |  ├── gender.vue
+|  |  |  |  ├── section.vue
+|  |  |  |  └── ...
+|  |  |  ├── destination
+|  |  |  |  ├── index.js
+|  |  |  |  ├── option.vue
+|  |  |  |  ├── section.vue
+|  |  |  |  ├── website.vue
+|  |  |  |  └── ...
 |  ├── router
 |  |  └── index.js
 |  ├── store
@@ -58,19 +72,7 @@ It provides a basic code base to help you figure out the structure of your Vue p
 |  |  ├── invite
 |  |  |  └── InviteMemberPage.vue
 |  |  ├── launchAds
-|  |  |  ├── components
-|  |  |  |  ├── audience
-|  |  |  |  |  ├── index.js
-|  |  |  |  |  ├── age.vue
-|  |  |  |  |  ├── gender.vue
-|  |  |  |  |  ├── section.vue
-|  |  |  |  |  └── ...
-|  |  |  |  └── destination
-|  |  |  |  |  ├── index.js
-|  |  |  |  |  ├── option.vue
-|  |  |  |  |  ├── section.vue
-|  |  |  |  |  ├── website.vue
-|  |  |  |  |  └── ...
+|  |  |  ├── LaunchAds.vue
 |  |  ├── socialAccount
 |  |  |  ├── components
 |  |  |  |  └── SocialProfileCard.vue
