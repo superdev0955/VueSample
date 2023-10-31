@@ -1,4 +1,4 @@
-# <img src="./src/assets/sm_logo.png" width="22" height="26"> SocialMulli Vue js
+# Vue Structure
 
 This project was generated with [Vue CLI] version 5.0.8 and [Node.js] version 18.
 It provides a basic code base to help you figure out the structure of your Vue project for Social Mulli.
@@ -24,12 +24,19 @@ It provides a basic code base to help you figure out the structure of your Vue p
 |  |  ├── 404.png
 |  |  ├── logo.png
 |  ├── components
-|  |  ├── Banner.vue
-|  |  ├── Checkbox.vue
-|  |  ├── DatePicker.vue
-|  |  ├── DialogModal.vue
-|  |  ├── Dropdown.vue
-|  |  └── ...
+|  |  ├── app
+|  |  |  ├── Footer.vue
+|  |  |  ├── Header.vue
+|  |  ├── custom
+|  |  |  ├── EjsDropdown.vue
+|  |  ├── form
+|  |  |  ├── FormSection.vue
+|  |  └── ui
+|  |  |  ├── CheckBox.vue
+|  |  |  ├── ConfirmationModal.vue
+|  |  |  ├── DangerButton.vue
+|  |  |  ├── Dropzone.vue
+|  |  |  └── ...
 |  ├── constants
 |  |  └── dashboard
 |  |  |  ├── index.js
@@ -56,7 +63,7 @@ It provides a basic code base to help you figure out the structure of your Vue p
 |  ├── router
 |  |  └── index.js
 |  ├── store
-|  |  ├── modules
+|  |  ├── units
 |  |  |  ├── app.js
 |  |  |  ├── user.js
 |  |  |  └── ...
@@ -83,12 +90,19 @@ It provides a basic code base to help you figure out the structure of your Vue p
 ```
 ## Infrastructure restructuring (reorganization by functional unit and page unit)
 - It must have a register structure that includes low-level components.
+  A directory structure should be created by linking sub-components so that components can be recognized at a glance for each purpose.
 - Along with modularization, components related to UI are selected and used separately.
+  If the upper module is a functional unit rather than a component unit, the structure can be improved by dividing the path by module and configuring the sub-path considering each module as a small project unit.
 - Naming of sub-registries must be regulated and functional units must be made unique.
 
 ## Naming rules of Component
 - It is better to use one approach for file names. (PascalCase, kebab-case, camelCase, snake_case)
+  File names for single-file components must always be pascal case or always kebab case.
+  In the project, the names of vue components are mixed with Pascal case name, Kebab case name, and Camel case name.
+  We should default to Pascal casenames because they work best with the code editor's autocompletion feature, and whenever possible they match how we refer to components in JSX and templates.
+  And in the case of the camel case name, it is an incorrect name that completely violates the naming rules.
 - For components with the same category, a prefix related to the parent must be used.
+  Components that are strongly tied to the parent component should use the name of the parent component as a prefix.
 - For components that are used uniquely, it is better to use them with “The” attached.
 - For sub-registries, different naming rules must be applied for each functional group. Import/export the component through index.js.
 
@@ -99,6 +113,8 @@ It provides a basic code base to help you figure out the structure of your Vue p
 
 ## Annotate
 - The purpose of component use must be specified.
+  Currently, components do not include comments describing their functionality.
+  It is helpful to add comments within your code to explain the code's purpose, behavior, main logic, component roles, etc.
 - By using VS-code extensions such as Todo tree, basic error tracking and development synchronization can be guaranteed.
 
 ## Code formatting and error handling through VScode
